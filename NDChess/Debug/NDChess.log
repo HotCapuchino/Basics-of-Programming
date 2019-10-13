@@ -1,0 +1,6 @@
+﻿  NDChess.cpp
+g:\programdata\visual studio projects\ndchess\ndchess\ndchess.cpp(30): warning C4018: <: несоответствие типов со знаком и без знака
+g:\programdata\visual studio projects\ndchess\ndchess\ndchess.cpp(43): warning C4018: <: несоответствие типов со знаком и без знака
+g:\programdata\visual studio projects\ndchess\ndchess\ndchess.cpp(45): warning C4018: <: несоответствие типов со знаком и без знака
+g:\programdata\visual studio projects\ndchess\ndchess\ndchess.cpp(19): warning C4715: fact: значение возвращается не при всех путях выполнения
+  NDChess.vcxproj -> G:\ProgramData\Visual Studio Projects\NDChess\Debug\NDChess.exe

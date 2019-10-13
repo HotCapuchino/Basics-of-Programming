@@ -1,0 +1,8 @@
+﻿  pch.cpp
+  NDChess.cpp
+g:\programdata\visual studio projects\ndchess\ndchess\ndchess.cpp(27): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода
+g:\programdata\visual studio projects\ndchess\ndchess\ndchess.cpp(16): warning C4715: fact: значение возвращается не при всех путях выполнения
+  All 11 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  NDChess.vcxproj -> G:\ProgramData\Visual Studio Projects\NDChess\Release\NDChess.exe
