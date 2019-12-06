@@ -19,7 +19,7 @@ int main()
 	}
 	for (size_t i = 1; i < 30; i++)
 	{
-		while (my_array[i] > my_array[i - 1]) {
+		while (my_array[i] > my_array[i - 1] && i < 30) {
 			box++;
 			i++;
 		}
