@@ -117,15 +117,6 @@ int main()
 			}
 		}
 	}
-	cout << "\nIndexes: \n";
-	for (size_t i = 0; i < 3; i++)
-	{
-		for (size_t j = 0; j < 8; j++)
-		{
-			cout << indexes[i][j] << " ";
-		}
-		cout << endl;
-	}
 	for (size_t i = 0; i < 8; i++)
 	{
 		if (indexes[2][i] != 8)
