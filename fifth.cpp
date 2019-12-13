@@ -4,8 +4,7 @@
 #include <iomanip>
 
 using namespace std;
-template <int row, int col>
-void possibleThreats(int queenX, int queenY, int kingX, int kingY, int(&indexes)[row][col]) {
+void possibleThreats(int queenX, int queenY, int kingX, int kingY, int indexes[3][8]) {
 	int buffer;
 	if (queenX == kingX)
 	{
