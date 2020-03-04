@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 	srand(time(NULL));
-    cout << "Enter n: "; 
+    	cout << "Enter n: "; 
 	int n;
 	cin >> n;
 	int **matrix = new int*[n];
