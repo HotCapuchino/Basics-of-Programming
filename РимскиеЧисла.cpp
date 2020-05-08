@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+#include "pch.h"
 #include <iostream>
 #include <string>
 
@@ -159,6 +159,40 @@ int main()
 	}
 	if (!isNum)
 	{
+		Dictionary dict = Dictionary();
+		for (size_t i = 1; i < number.length(); i++)
+		{
+			char lil_string[2] = { number[i - 1], number[i] };
+			string s1(lil_string, sizeof(lil_string));
+			string s2 = "";
+			string s3 = "";
+			s2.push_back(number[i - 1]);
+			s3.push_back(number[i]);
+			int index1 = 0;
+			int index2 = 0;
+			bool allGood = false;
+			for (size_t j = 0; j < 14; j++)
+			{
+				if (s2 == dict.roman_num_capital[j]) {
+					index1 = j;
+				}
+				if (s3 == dict.roman_num_capital[j])
+				{
+					index2 = j;
+				}
+				if (s1 == dict.roman_num_capital[j])
+				{
+					allGood = true;
+				}
+			}
+			if (!allGood)
+			{
+				if (index1 < index2) {
+					cout << "Wrong Arabic number!";
+					return -1;
+				}
+			}
+		}
 		int digit = fromRomanToArabic(number);
 		digit == -1 ? cout << "Wrong Arabic number!" : cout <<digit;
 	}
