@@ -191,6 +191,10 @@ int main()
 					cout << "Wrong Arabic number!";
 					return -1;
 				}
+				else if ((index1 == index2) && (index1 == 3 || index1 == 11)) {
+					cout << "Wrong Arabic number!";
+					return -1;
+				}
 			}
 		}
 		int digit = fromRomanToArabic(number);
