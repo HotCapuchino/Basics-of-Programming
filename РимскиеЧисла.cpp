@@ -1,6 +1,7 @@
-﻿#include "pch.h"
+#include "pch.h"
 #include <iostream>
 #include <string>
+#include <algorithm>
 
 using namespace std;
 
@@ -145,7 +146,6 @@ int fromRomanToArabic(string num) {
 int main()
 {
     cout << "Enter arabic or roman number:\n"; 
-	cout << "Pls, for Roman nubers use onle capital numbers, my program isn't perfect\n";
 	string number = "";
 	cin >> number;
 	bool isNum = true;
@@ -159,6 +159,7 @@ int main()
 	}
 	if (!isNum)
 	{
+		transform(number.begin(), number.end(), number.begin(), toupper);
 		Dictionary dict = Dictionary();
 		for (size_t i = 1; i < number.length(); i++)
 		{
