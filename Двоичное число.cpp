@@ -19,4 +19,3 @@ int main()
 	cin >> num;
 	toBinary(num);
 }
-
