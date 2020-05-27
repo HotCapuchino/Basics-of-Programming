@@ -1,6 +1,6 @@
 ﻿#include "pch.h"
 #include <iostream>
-#include <string>
+
 using namespace std;
 void toBinary(int num) {
 	if (num <= 0) {
