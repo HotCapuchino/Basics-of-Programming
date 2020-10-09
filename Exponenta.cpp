@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+#include "pch.h"
 #include <iostream>
 #include <iomanip>
 #include <time.h>
@@ -7,12 +7,12 @@
 using namespace std;
 typedef unsigned long long mll;
 bool setNulls(mll* arr, mll size);
-void divide(mll* factorial, mll size, int divider);
+void divide(mll* factorial, mll size, long long divider);
 void add(mll* exp, mll* factorial, mll size);
 bool isZero(mll* factorial, mll size);
 void printExp(mll* exp, mll size);
-const mll base = 10e12;
-mll digits = 10e6;
+const mll base = 1e2;
+mll digits = 1e6;
 mll amount = digits / log10(base) + 1;
 
 int main()
@@ -23,7 +23,7 @@ int main()
 	setNulls(factorial, amount);
 	exponenta[0] = 1;
 	factorial[0] = 1;
-	int i = 1;
+	long long i = 1;
 	time_t start_time, end_time;
 	time(&start_time);
 	while (!isZero(factorial, amount))
@@ -40,10 +40,10 @@ int main()
 	delete[] factorial;
 }
 
-void divide(mll* factorial, mll size, int divider) {
+void divide(mll* factorial, mll size, long long divider) {
 	mll result = 0;
 	mll buffer = 0;
-	int counter = 0;
+	long long counter = 0;
 	while (factorial[counter] == 0)
 	{
 		counter++;
@@ -58,7 +58,7 @@ void divide(mll* factorial, mll size, int divider) {
 
 void add(mll* exponenta, mll* factorial, mll size) {
 	mll remained = 0;
-	for (int i = size - 1; i >= 0; i--)
+	for (long long i = size - 1; i >= 0; i--)
 	{
 		exponenta[i] += factorial[i] + remained;
 		if (exponenta[i] > base) {
@@ -72,7 +72,7 @@ void add(mll* exponenta, mll* factorial, mll size) {
 }
 
 bool setNulls(mll* arr, mll size) {
-	for (int i = 0; i < size; i++)
+	for (long long i = 0; i < size; i++)
 	{
 		try
 		{
@@ -87,7 +87,7 @@ bool setNulls(mll* arr, mll size) {
 }
 
 bool isZero(mll* factorial, mll size) {
-	for (int i = 0; i < size; i++)
+	for (long long i = 0; i < size; i++)
 	{
 		if (factorial[i]) {
 			return false;
@@ -101,7 +101,7 @@ void printExp(mll* exponenta, mll size) {
 	fout.open("exponenta.txt");
 	fout << exponenta[0] << ".";
 	int cell_size = log10(base);
-	for (int i = 1; i < size; i++)
+	for (long long i = 1; i < size; i++)
 	{
 		fout << setfill('0') << setw(cell_size) << exponenta[i];
 	}
