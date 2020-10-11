@@ -37,7 +37,7 @@ int main()
 	time(&end_time);
 	time_t inGeneral = end_time - start_time;
 	printf("General Time: %ld seconds. ", inGeneral);
-	/*printExp(exponenta, amount);*/
+	printExp(exponenta, amount);
 	/*checkExp();*/
 	delete[] exponenta;
 	delete[] factorial;
