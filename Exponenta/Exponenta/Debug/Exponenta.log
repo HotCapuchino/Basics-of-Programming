@@ -1,0 +1,15 @@
+﻿  Exponenta.cpp
+c:\users\andra\source\repos\exponenta\exponenta\exponenta.cpp(14): warning C4244: инициализация: преобразование "double" в "mll", возможна потеря данных
+c:\users\andra\source\repos\exponenta\exponenta\exponenta.cpp(15): warning C4244: инициализация: преобразование "double" в "mll", возможна потеря данных
+c:\users\andra\source\repos\exponenta\exponenta\exponenta.cpp(16): warning C4244: инициализация: преобразование "double" в "mll", возможна потеря данных
+c:\users\andra\source\repos\exponenta\exponenta\exponenta.cpp(20): warning C4244: инициализация: преобразование "mll" в "unsigned int", возможна потеря данных
+c:\users\andra\source\repos\exponenta\exponenta\exponenta.cpp(21): warning C4244: инициализация: преобразование "mll" в "unsigned int", возможна потеря данных
+c:\users\andra\source\repos\exponenta\exponenta\exponenta.cpp(37): warning C4477: "printf": в строке форматирования "%ld" требуется аргумент типа "long", но вариативный аргумент "1" имеет тип "time_t"
+  c:\users\andra\source\repos\exponenta\exponenta\exponenta.cpp(37): note: рекомендуется использовать "%lld" в строке форматирования
+  c:\users\andra\source\repos\exponenta\exponenta\exponenta.cpp(37): note: рекомендуется использовать "%I64d" в строке форматирования
+c:\users\andra\source\repos\exponenta\exponenta\exponenta.cpp(51): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\exponenta\exponenta\exponenta.cpp(75): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\exponenta\exponenta\exponenta.cpp(90): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\exponenta\exponenta\exponenta.cpp(103): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+c:\users\andra\source\repos\exponenta\exponenta\exponenta.cpp(104): warning C4018: <: несоответствие типов со знаком и без знака
+  Exponenta.vcxproj -> C:\Users\andra\source\repos\Exponenta\Debug\Exponenta.exe
