@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+#include "pch.h"
 #include <iostream>
 #include <string>
 
@@ -10,8 +10,8 @@ enum Cell {
 	YELLOW
 };
 
-const int di[] = {1, 0, 1, 1}; // с помощью этого массива двигаемся по строке 
-const int dj[] = {0, 1, -1, 1}; // с помощью этого - по столбцам
+const int di[] = { 1, 0, 1, 1 }; // с помощью этого массива двигаемся по строке 
+const int dj[] = { 0, 1, -1, 1 }; // с помощью этого - по столбцам
 // к примеру 1, 0 позволяет пройти по горизонтали
 // 0, 1 позволяет идти по вертикали
 // 1, -1 позволяет идти по обратной диагонали
@@ -41,7 +41,7 @@ public:
 
 	Field(bool isRedFirst) {
 		clear(isRedFirst);
-	} 
+	}
 
 	void clear(bool isRedFirst) // очистка поля, сразу же задаем очередность 
 	{
@@ -114,20 +114,20 @@ public:
 	Cell getCell(int i, int j) const {
 		return cells[i][j];
 	}
-	
+
 	bool isRedTurnNow() const {
 		return isRedTurn;
 	}
 
 	void print() const {
-		for (int i = 0; i < FIELD_WIDTH; i++)
+		for (int i = FIELD_WIDTH - 1; i >= 0; i--)
 		{
 			for (int j = 0; j < FIELD_HEIGHT; j++)
 			{
-				if (getCell(i, j) == RED) {
+				if (getCell(j, i) == RED) {
 					cout << "R ";
 				}
-				else if (getCell(i, j) == YELLOW) {
+				else if (getCell(j, i) == YELLOW) {
 					cout << "Y ";
 				}
 				else
@@ -143,7 +143,7 @@ public:
 		if (isWon(true)) {
 			cout << "Game over! Red player has won!";
 		}
-		else if (!isWon(true)){
+		else if (!isWon(true)) {
 			cout << "Game over! Yellow player has won!";
 		}
 	}
@@ -197,5 +197,5 @@ int main()
 			}
 		}
 		turn = !turn;
-	}	
+	}
 }
