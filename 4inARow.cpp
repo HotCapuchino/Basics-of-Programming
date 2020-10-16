@@ -124,10 +124,10 @@ public:
 		{
 			for (int j = 0; j < FIELD_HEIGHT; j++)
 			{
-				if (getCell(j, i) == RED) {
+				if (getCell(i, j) == RED) {
 					cout << "R ";
 				}
-				else if (getCell(j, i) == YELLOW) {
+				else if (getCell(i, j) == YELLOW) {
 					cout << "Y ";
 				}
 				else
@@ -151,10 +151,10 @@ public:
 
 	bool makeTurn(int column) //  функция хода
 	{
-		if (winner != EMPTY || column < 1 || column > FIELD_WIDTH)
+		if (winner != EMPTY || column < 1 || column > FIELD_HEIGHT)
 			return false;
-		int i = column - 1;
-		for (int j = 0; j < FIELD_HEIGHT; j++)
+		int j = column - 1;
+		for (int i = 0; i < FIELD_WIDTH; i++)
 			if (getCell(i, j) == EMPTY)
 			{
 				cells[i][j] = isRedTurn ? RED : YELLOW;
