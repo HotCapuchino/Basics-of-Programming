@@ -67,19 +67,19 @@ bool Vector::operator ==(const Vector &vector) {
 	}
 };
 
-Vector& Vector::operator +(const Vector &vector) {
-	Vector new_vector(size + vector.size);
-	int currentIndex = size;
-	for (int i = 0; i < size; i++)
-	{
-		new_vector.insert(ptr[i]);
-	}
-	for (int i = 0; i < vector.size; i++)
-	{
-		new_vector.insert(vector.ptr[i]);
-	}
-	return new_vector;
-}
+// Vector& Vector::operator +(const Vector &vector) {
+// 	Vector new_vector(size + vector.size);
+// 	int currentIndex = size;
+// 	for (int i = 0; i < size; i++)
+// 	{
+// 		new_vector.insert(ptr[i]);
+// 	}
+// 	for (int i = 0; i < vector.size; i++)
+// 	{
+// 		new_vector.insert(vector.ptr[i]);
+// 	}
+// 	return new_vector;
+// }
  
 void Vector::increaseCapacity(int newCapasity) { // increasing capacity
 	if (newCapasity > MAX_CAPACITY || (long)(capacity * 2) > MAX_CAPACITY) {
