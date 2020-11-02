@@ -45,4 +45,6 @@ public:
 	int getSize() const; // get vector's size
 
 	friend std::ostream& operator <<(std::ostream& out, const Vector& vector); // print Vector
+	
+	int find(int elem); // find elem
 };
