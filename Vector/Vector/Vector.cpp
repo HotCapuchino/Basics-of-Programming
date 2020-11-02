@@ -207,3 +207,13 @@ std::ostream& operator <<(std::ostream& out, const Vector& vector) { // printing
 	}
 	return out;
 };
+
+int Vector::find(int elem) { // find elem
+	for (int i = 0; i < size; i++)
+	{
+		if (ptr[i] == elem) {
+			return i;
+		}
+	}
+	return -1;
+}
