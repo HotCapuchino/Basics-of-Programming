@@ -14,7 +14,7 @@ public:
 	~Circle();
 	double getPerimetr();
 	double getSquare();
+	std::string printClass();
 	friend std::fstream& operator>>(std::fstream& in, Circle& circle);
 	friend std::ostream& operator<<(std::ostream& out, Circle& circle);
 };
-
