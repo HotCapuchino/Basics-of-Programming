@@ -13,6 +13,11 @@ Rectangle::Rectangle(Point* arr) {
 	b = sqrt(QuickPow::getPower((arr[1] - arr[2]).getX(), 2) + QuickPow::getPower((arr[1] - arr[2]).getY(), 2));
 }
 
+std::string Rectangle::printClass()
+{
+	return "Rectangle";
+}
+
 Rectangle::~Rectangle() {
 }
 
