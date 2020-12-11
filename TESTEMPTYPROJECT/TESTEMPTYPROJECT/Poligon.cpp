@@ -16,6 +16,11 @@ Poligon::~Poligon() {
 	delete[] polygon_points;
 }
 
+std::string Poligon::printClass()
+{
+	return "Polygon";
+}
+
 double Poligon::getPerimetr() {
 	double perimetr = 0;
 	for (size_t i = 1; i < angles + 1; i++) {
