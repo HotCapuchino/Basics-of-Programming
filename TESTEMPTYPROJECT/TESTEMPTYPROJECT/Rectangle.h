@@ -7,8 +7,8 @@ private:
 public:
 	Rectangle(double a, double b);
 	Rectangle(Point* arr);
+	std::string printClass();
 	~Rectangle();
 	double getPerimetr();
 	double getSquare();
 };
-
