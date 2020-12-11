@@ -20,6 +20,11 @@ double Triangle::getSquare() {
 	return sqrt(half_perimetr * (half_perimetr - a) * (half_perimetr - b) * (half_perimetr - c));
 }
 
+std::string Triangle::printClass()
+{
+	return "Triangle";
+}
+
 Triangle::~Triangle() {
 }
 
@@ -28,7 +33,7 @@ double Triangle::getPerimetr() {
 }
 
 std::ostream& operator <<(std::ostream& out, Triangle& triangle) {
-	out << "Còîðîíû òðåóãîëüíèêà: " << triangle.a << ", " << triangle.b << ", " << triangle.c << "\n";
+	out << "CÑ‚Ð¾Ñ€Ð¾Ð½Ñ‹ Ñ‚Ñ€ÐµÑƒÐ³Ð¾Ð»ÑŒÐ½Ð¸ÐºÐ°: " << triangle.a << ", " << triangle.b << ", " << triangle.c << "\n";
 	return out;
 }
 
