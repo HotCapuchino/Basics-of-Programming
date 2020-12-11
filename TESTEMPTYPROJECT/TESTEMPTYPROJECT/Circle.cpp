@@ -16,7 +16,7 @@ Circle::Circle(Point& center, double radius) {
 
 
 Circle::~Circle() {
-	delete &center;
+	/*delete &center;*/
 }
 
 double Circle::getPerimetr() {
@@ -28,6 +28,10 @@ double Circle::getSquare() {
 
 }
 
+std::string Circle::printClass() {
+	return "Circle";
+}
+
 std::fstream & operator>>(std::fstream & in, Circle & circle)
 {
 	in >> circle.radius;
@@ -36,6 +40,6 @@ std::fstream & operator>>(std::fstream & in, Circle & circle)
 
 std::ostream & operator<<(std::ostream & out, Circle & circle)
 {
-	out << "Ðàäèóñ êðóãà: " << circle.radius << ", öåíòð: " << "(" << circle.center;
+	out << "Ð Ð°Ð´Ð¸ÑƒÑ ÐºÑ€ÑƒÐ³Ð°: " << circle.radius << ", Ñ†ÐµÐ½Ñ‚Ñ€: " << "(" << circle.center;
 	return out;
 }
