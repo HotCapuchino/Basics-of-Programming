@@ -1,0 +1,12 @@
+﻿  main.cpp
+c:\users\andra\source\repos\графы\графы\main.cpp(44): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\графы\графы\main.cpp(47): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\графы\графы\main.cpp(55): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\графы\графы\main.cpp(62): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\графы\графы\main.cpp(84): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\графы\графы\main.cpp(109): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\графы\графы\main.cpp(117): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\графы\графы\main.cpp(124): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\графы\графы\main.cpp(185): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\графы\графы\main.cpp(192): warning C4018: <: несоответствие типов со знаком и без знака
+  Графы.vcxproj -> C:\Users\andra\source\repos\Графы\Debug\Графы.exe
