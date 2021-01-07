@@ -5,11 +5,12 @@
 template<class T>
 class LinkedList {
 private:
-	LinkedListElem<T>** elements = nullptr; // указатель на первый элемент массива всех элементов связного списка
-	LinkedListElem<T>* start = nullptr; // указатель на первый элемент
-	LinkedListElem<T>* end = nullptr; // указатель на последний элемент
-	unsigned int size;
+	LinkedListElem<T>** elements = nullptr; // СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР° РІСЃРµС… СЌР»РµРјРµРЅС‚РѕРІ СЃРІСЏР·РЅРѕРіРѕ СЃРїРёСЃРєР°
+	LinkedListElem<T>* start = nullptr; // СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
+	LinkedListElem<T>* end = nullptr; // СѓРєР°Р·Р°С‚РµР»СЊ РЅР° РїРѕСЃР»РµРґРЅРёР№ СЌР»РµРјРµРЅС‚
 	unsigned int capacity;
+	unsigned int size;
+	unsigned int actualSize = 0;
 	bool looped;
 	////////////////////////////////////// done
 	void increaseCapacity() {
@@ -21,6 +22,7 @@ private:
 		capacity *= 2;
 	};
 public:
+
 	LinkedList() {
 		looped = false;
 		size = 0;
@@ -48,6 +50,7 @@ public:
 			end = start;
 			elements[size] = start;
 			size++;
+			actualSize++;
 			return;
 		}
 		LinkedListElem<T>* new_elem = new LinkedListElem<T>(elem_data, end);
@@ -59,6 +62,7 @@ public:
 		}
 		elements[size] = new_elem;
 		size++;
+		actualSize++;
 	};
 
 	// done
@@ -99,6 +103,7 @@ public:
 		previous_elem->setNext(new_elem);
 		elements[size] = new_elem;
 		size++;
+		actualSize++;
 	};
 
 	void insertBeforeElement(T& elem_data, T& next_elem_data) {
@@ -127,11 +132,20 @@ public:
 			next_elem->setPrevious(new_elem);
 			elements[size] = new_elem;
 			size++;
+			actualSize++;
 		}
 	};
 
 	void removeElement(T& elem_data) {
 		LinkedListElem<T>* target_elem = this->getElement(elem_data);
+		if (target_elem == start) {
+			this->removeFirst();
+			return;
+		} 
+		if (target_elem == end) {
+			this->removeLast();
+			return;
+		}
 		if (target_elem != nullptr) {
 			LinkedListElem<T>* previous_elem = target_elem->getPrevious();
 			LinkedListElem<T>* next_elem = target_elem->getNext();
@@ -174,7 +188,7 @@ public:
 
 	//////////////////////////////////////////////// done
 	LinkedListElem<T>* getElement(T& elem_data) {
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < actualSize; i++) {
 			if (elements[i] == nullptr) continue;
 			if (elements[i]->getData() == elem_data) {
 				return elements[i];
@@ -184,7 +198,7 @@ public:
 	};
 
 	int getElementPosition(T& elem_data) {
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < actualSize; i++) {
 			if (elements[i] == nullptr) continue;
 			if (elements[i]->getData() == elem_data) {
 				return i;
@@ -195,7 +209,7 @@ public:
 
 	int getSize() {
 		int counter = 0;
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < actualSize; i++) {
 			if (elements[i] != nullptr) {
 				counter++;
 			}
@@ -217,4 +231,3 @@ public:
 
 	friend class LinkedListElem<T>;
 };
-
