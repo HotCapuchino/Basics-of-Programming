@@ -49,8 +49,4 @@ public:
 
 	~LinkedListElem() {};
 
-	/*friend ostream& operator <<(ostream& out, const LinkedListElem<T>& elem) {
-		out << "data: " << elem.getData() << endl;
-		return out;
-	}*/
 };
