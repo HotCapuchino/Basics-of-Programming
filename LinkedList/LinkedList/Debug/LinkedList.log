@@ -1,0 +1,22 @@
+﻿  LinkedListException.cpp
+  main.cpp
+c:\users\andra\source\repos\linkedlist\linkedlist\linkedlist.h(69): warning C4018: >=: несоответствие типов со знаком и без знака
+  c:\users\andra\source\repos\linkedlist\linkedlist\linkedlist.h(65): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\andra\source\repos\linkedlist\linkedlist\main.cpp(17): note: выполняется компиляция ссылки на экземпляр шаблон функции "void LinkedList<int>::printElems(void)"
+  c:\users\andra\source\repos\linkedlist\linkedlist\main.cpp(7): note: выполняется компиляция ссылки на экземпляр шаблон класс "LinkedList<int>"
+c:\users\andra\source\repos\linkedlist\linkedlist\linkedlist.h(187): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\andra\source\repos\linkedlist\linkedlist\linkedlist.h(186): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\andra\source\repos\linkedlist\linkedlist\linkedlist.h(140): note: выполняется компиляция ссылки на экземпляр шаблон функции "int LinkedList<int>::getElementPosition(T &)"
+          with
+          [
+              T=int
+          ]
+c:\users\andra\source\repos\linkedlist\linkedlist\linkedlist.h(177): warning C4018: <: несоответствие типов со знаком и без знака
+  c:\users\andra\source\repos\linkedlist\linkedlist\linkedlist.h(176): note: при компиляции функции-члена "<Нет данных>" класса класс <Нет данных>
+  c:\users\andra\source\repos\linkedlist\linkedlist\linkedlist.h(134): note: выполняется компиляция ссылки на экземпляр шаблон функции "LinkedListElem<T> *LinkedList<T>::getElement(T &)"
+          with
+          [
+              T=int
+          ]
+  Создание кода...
+  LinkedList.vcxproj -> C:\Users\andra\source\repos\LinkedList\Debug\LinkedList.exe
