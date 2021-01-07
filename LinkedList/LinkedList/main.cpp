@@ -45,7 +45,7 @@ int main(void) {
 	LinkedListElem<int>* current_elem = iosif_squad.getStart();
 	//
 	cout << "initial size: " << iosif_squad.getSize() << endl;
-	while (iosif_squad.getSize() > 2) {
+	while (iosif_squad.getSize() > 1) {
 		for (size_t i = 0; i < kill_gap; i++) {
 			current_elem = current_elem->getNext();
 		}
@@ -57,19 +57,7 @@ int main(void) {
 		iosif_squad.printElems();
 		cout << "------------------\n";
 	}
-	cout << "Iosif should pick one of these numbers: (";
-	current_elem = iosif_squad.getStart()->getNext();
-	while (true) {
-		cout << current_elem->getData();
-		if (current_elem == iosif_squad.getStart()) {
-			break;
-		}
-		else {
-			cout << ", ";
-		}
-		current_elem = current_elem->getNext();
-	}
-	cout << ") in order not to be killed.";
+	cout << "Iosif should pick number: (" << iosif_squad.getStart()->getData() << ") in order not to be killed.";
 	system("pause");
 	return 0;
 }
