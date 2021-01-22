@@ -1,0 +1,6 @@
+﻿  main.cpp
+c:\users\andra\source\repos\quadripleprecision\quadripleprecision\quadripleprecision.h(58): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\quadripleprecision\quadripleprecision\quadripleprecision.h(75): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\quadripleprecision\quadripleprecision\quadripleprecision.h(123): warning C4018: <: несоответствие типов со знаком и без знака
+c:\users\andra\source\repos\quadripleprecision\quadripleprecision\quadripleprecision.h(170): warning C4018: <: несоответствие типов со знаком и без знака
+  QuadriplePrecision.vcxproj -> C:\Users\andra\source\repos\QuadriplePrecision\Debug\QuadriplePrecision.exe
